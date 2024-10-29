@@ -1,0 +1,124 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the form container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 1rem;
+}
+
+/* Form container styling */
+form {
+  background: rgba(255, 255, 255, 0.85); /* Translucent white background */
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for floating effect */
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+/* Title styling */
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.9rem;
+  color: #111827;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #667eea;
+}
+
+/* Button styling */
+button {
+  width: 48%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Register button */
+button[type="submit"] {
+  background-color: #667eea;
+  color: #ffffff;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a67d8;
+}
+
+/* Cancel button */
+button[type="button"] {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+button[type="button"]:hover {
+  background-color: #d1d5db;
+}
+
+/* Error message styling */
+p {
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
